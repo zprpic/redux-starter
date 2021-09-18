@@ -7,8 +7,8 @@ export default function reducer(state = [], action) {
       return [
         ...state,
         {
-          Id: ++lastId,
-          description: action.payload.descripiton,
+          id: ++lastId,
+          description: action.payload.description,
           resolved: false,
         },
       ];
@@ -18,6 +18,4 @@ export default function reducer(state = [], action) {
     default:
       return state;
   }
-
-  return state;
 }
