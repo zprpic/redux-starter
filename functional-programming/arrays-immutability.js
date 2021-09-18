@@ -13,5 +13,4 @@ console.log(removed);
 
 // Updating
 const updated = numbers.map((number) => (n === 2 ? 20 : number));
-
 console.log(updated);
