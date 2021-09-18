@@ -6,11 +6,11 @@ let output = "<div>" + input.trim() + "</div>";
 
 const trim = (untrimmed) => untrimmed.trim();
 
-const wrap = (unwrapped) => `<div>${unwrapped}</div>`;
+const wrap = (type) => (unwrapped) => `<${type}>${unwrapped}</${type}>`;
 
 const toLowerCase = (string) => string.toLowerCase();
 
-const transform = pipe(trim, toLowerCase, wrap);
+const transform = pipe(trim, toLowerCase, wrap("span"));
 
 const result = transform(input);
 
