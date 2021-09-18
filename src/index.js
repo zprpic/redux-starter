@@ -1,1 +1,3 @@
-console.log("hello world");
+import store from "./Store";
+
+console.log(store);
